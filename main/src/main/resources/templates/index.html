@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>ArTeach Home</title>
+<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+<div class="Header">
+        <div class="Header__section">
+            <button class="button Header__item HeaderButton" onclick="location.href='/about.html'">About</button>
+            <button class="button Header__item HeaderButton">Contact</button>
+        </div>
+        <p style="color: white;font-size: 25px;"><strong>Welcome to ArTeach</strong></p>
+        <div class="Header__section">
+            <button class="button Header__item HeaderButton">Settings</button>
+            <button class="button Header__item HeaderButton">Log out</button>
+        </div>
+    </div>
+	
+	<div class="flex-container">
+		<form class="form"  method = "GET" action="/login" >
+			<input class="input" id="button_1"  type="submit" value="Login" />			
+		</form>
+		
+		<form class="form" action="/museum" method="GET">
+			<input class="input" id="button_2" type="submit" value="Museums" />
+		</form>
+	</div>
+	<div class="flex-container">
+		<form class="form" action="/searchDB" method="GET">
+			<input class="input" id="button_3" type="submit" value="Teach!" />
+		</form>
+		
+		<form class="form" action="/findstuff" method="GET">
+			<input class="input"  id="button_4" type="submit" value="Learn!" />
+		</form>
+	</div>
+</body>
+</html>
